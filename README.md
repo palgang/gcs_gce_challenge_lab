@@ -5,7 +5,7 @@ Challenge:
 - Create new project
 - Create GCE instance that runs provided start-up script
 - Create GCS bucket for log files
-- Log files appears in GCS bucket after instance finishes starting up
+- Log files appear in GCS bucket after instance finishes starting up
 
 
 Solution using CLI:
@@ -21,7 +21,7 @@ gcloud config set project gsc-gce-challengelab-cli2
 - Create GCS bucket
 gsutil mb gs://gsc-gce-challengelab-iar-cli2
 
-- Enable Compute Apis for creation of VM
+- Enable Compute Apis for creation of VM (GCS and Stackdriver are enabled by default, GCE is not enabled by default)
 gcloud services enable compute.googleapis.com
 
 - Create VM
